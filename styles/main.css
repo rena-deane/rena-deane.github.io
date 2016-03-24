@@ -44,7 +44,7 @@ h3, h5 {
 }
 
 h5 {
-  margin-top: 5px;
+  margin-top: 20px;
   margin-bottom: 20px;
   color: #939696;
   font-size: smaller;
@@ -54,6 +54,12 @@ h6 {
   margin-bottom: 0;
   margin-top: 15px;
   font-size: 14px;
+}
+
+code {
+  font-size: 12px;
+  font-weight: 600;
+  color: #800000;
 }
 
 /* specific elements */
@@ -156,4 +162,36 @@ header {
   font-size: 14px;
   margin: 0 0 0 20px;
   padding: 0;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+
+.secondary-nav li {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+.secondary-nav a {
+  text-decoration: underline;
+}
+
+ul.secondary-nav {
+  margin-left: 0;
+}
+
+li.activenav {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+li.otherlesson {
+  margin-left: 0;
+  margin-right: 20px;
 }
