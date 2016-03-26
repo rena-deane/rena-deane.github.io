@@ -24,7 +24,7 @@ div {
 }
 
 p {
-  margin-top: 0;
+  margin: 0 0 20px 0;
   text-align: justify;
   font-size: 14px;
 }
@@ -39,20 +39,20 @@ h1, h2 {
   width: 360px;
 }
 
-h3, h5 {
+h3, h4 {
   margin: 0;
 }
 
-h5 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+h4 {
   color: #939696;
-  font-size: smaller;
+  font-size: 14px;
+  font-weight: lighter;
+  margin-top: 20px;
 }
 
-h6 {
+h5 {
   margin-bottom: 0;
-  margin-top: 15px;
+  margin-top: 5px;
   font-size: 14px;
 }
 
@@ -123,7 +123,7 @@ header {
 .masthead {
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  max-width: 60%;
   text-transform: uppercase;
 }
 
@@ -147,21 +147,21 @@ header {
 
 .content {
   clear: both;
-  width: 70%;
+  max-width: 60%;
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
+  line-height: 1.8;
 }
 
-.content p{
-  margin: 0;
-  padding: 0;
-}
-
-.content ul, li {
+.content ul, ol {
   font-size: 14px;
-  margin: 0 0 0 20px;
+  margin: 0 0 10px 20px;
   padding: 0;
+}
+
+.content li {
+  margin-left: 50px;
 }
 
 img {
@@ -170,10 +170,10 @@ img {
   max-width: 300px;
 }
 
-
 .secondary-nav li {
   display: inline-block;
   font-size: 12px;
+  margin-bottom: 5px;
   margin-right: 5px;
   text-transform: uppercase;
 }
@@ -183,10 +183,10 @@ img {
 }
 
 ul.secondary-nav {
-  margin-left: 0;
+  margin: 0;
 }
 
-li.activenav {
+li.secondary-activenav {
   margin-left: 0;
   margin-right: 20px;
 }
@@ -194,4 +194,8 @@ li.activenav {
 li.otherlesson {
   margin-left: 0;
   margin-right: 20px;
+}
+
+.blog-post {
+  margin: 30px auto;
 }
