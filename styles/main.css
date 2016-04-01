@@ -1,42 +1,66 @@
 /*basic elements*/
 body {
-
+  color: #666;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Raleway', sans-serif;
   margin: 0;
   text-transform: uppercase;
 }
 
+h4, h5 {
+  margin-bottom: 0;
+}
+
 /*specific elements*/
+
 .header {
   width: 100%;
   display: inline-block;
+  margin-bottom: 2em;
 }
 
 .inner-header{
   width: 100%;
 }
 
-
-
 .primary-nav  {
-  float: right;
   text-transform: uppercase;
-  border-top: thin solid #000000;
-  border-bottom: thin solid #000000;
+  border-bottom: thin solid #ebebeb;
   margin-bottom: 2em;
+  width: 100%;
+  z-index: 1;
 }
-
-.site-nav li {
-  display: block;
+/*
+.primary-nav ul {
   float: right;
+}
+*/
+
+.primary-nav li {
+  display: block;
+  padding: .5em;
   margin: 1em 0 1em 2em;
 }
 
+.site-nav {
+  margin-top: 2em;
+}
+
 .site-nav a {
+  color: #555;
   text-decoration: none;
+}
+
+.contactme {
+  background-color: #00b0b9;
+  border-radius: .4em;
+  width: 8em;
+}
+
+.contactme a {
+  color: #ffffff;
 }
 
 .one-third.column.value {
@@ -44,13 +68,35 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.social {
-  padding: 4em 0;
+.radius-image {
+  border-radius: 50%;
+}
+
+.homepage-images {
+  margin-top: 1em;
+}
+
+.intro {
+  font-size: 1.5em;
   text-align: center;
+  font-family: "Josefin Slab", serif;
+}
+
+.social {
+  border-top: thin solid #ebebeb;
+  padding-top: 2em; 
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.row.social-icons {
+  margin-top: 2em;
 }
 
 .row li {
-  display: inline;
+  display: inline-block;
   list-style-type: none;
   padding: 2em;
   text-decoration: none;
