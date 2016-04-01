@@ -13,6 +13,10 @@ h4, h5 {
   margin-bottom: 0;
 }
 
+h5 {
+  font-size: 1.5em 
+}
+
 /*specific elements*/
 
 .header {
@@ -32,11 +36,6 @@ h4, h5 {
   width: 100%;
   z-index: 1;
 }
-/*
-.primary-nav ul {
-  float: right;
-}
-*/
 
 .primary-nav li {
   display: block;
@@ -66,6 +65,7 @@ h4, h5 {
 .one-third.column.value {
   margin-bottom: 4em;
   text-align: center;
+  white-space: nowrap;
 }
 
 .radius-image {
@@ -91,13 +91,44 @@ h4, h5 {
   width: 100%;
 }
 
-.row.social-icons {
-  margin-top: 2em;
+.row.social-icons ul, li {
+  margin: 0;
 }
 
 .row li {
   display: inline-block;
   list-style-type: none;
-  padding: 2em;
+  padding: 1em 2em;
   text-decoration: none;
+}
+
+.copyright {
+  margin-bottom: 1em;
+}
+
+.connect {
+  color: #00b0b9;
+}
+
+@media screen and (min-width: 550px) {
+  h5 {
+  font-size: 1.4em 
+  }
+}
+
+@media screen and (min-width: 750px) {
+  h5 {
+  font-size: 1.5em 
+  }
+
+  .primary-nav li {
+      display: inline;
+    }
+  
+  .primary-nav ul {
+      float: right;
+    }
+  .row li {
+      display: inline-block;
+    }
 }
