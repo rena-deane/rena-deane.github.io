@@ -17,12 +17,15 @@ h5 {
   font-size: 1.5em 
 }
 
+ul {
+  margin: 0;
+}
+
 /*specific elements*/
 
-.header {
+.row {
   width: 100%;
   display: inline-block;
-  margin-bottom: 2em;
 }
 
 .inner-header{
@@ -33,6 +36,7 @@ h5 {
   text-transform: uppercase;
   border-bottom: thin solid #ebebeb;
   margin-bottom: 2em;
+  padding-bottom: .5em;
   width: 100%;
   z-index: 1;
 }
@@ -44,7 +48,8 @@ h5 {
 }
 
 .site-nav {
-  margin-top: 2em;
+  margin: 2em 0
+  1em 0;
 }
 
 .site-nav a {
@@ -56,6 +61,7 @@ h5 {
   background-color: #00b0b9;
   border-radius: .4em;
   width: 8em;
+  text-align: center;
 }
 
 .contactme a {
@@ -91,15 +97,15 @@ h5 {
   width: 100%;
 }
 
-.row.social-icons ul, li {
-  margin: 0;
+.row.social-icons {
+  margin: 1em 0;
 }
 
-.row li {
+.row.social-icons li {
   display: inline-block;
   list-style-type: none;
-  padding: 1em 2em;
   text-decoration: none;
+  padding: 0 2em .5em 2em;
 }
 
 .copyright {
@@ -108,6 +114,10 @@ h5 {
 
 .connect {
   color: #00b0b9;
+}
+
+.active {
+  color:;
 }
 
 @media screen and (min-width: 550px) {
@@ -128,7 +138,7 @@ h5 {
   .primary-nav ul {
       float: right;
     }
-  .row li {
+  .row.social-icons li {
       display: inline-block;
     }
 }
