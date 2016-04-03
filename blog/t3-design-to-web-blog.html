@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="UTF-8">
+    <title>Rena-Deane: Blog</title>
+
+      <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:200,400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:400,300' rel='stylesheet' type='text/css'>
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div class="row">
+        <div class="primary-nav twelve columns">
+          <ul class="site-nav">
+            <li><a href="#">About</a></li>
+            <li class="active">Blog Post</li>
+            <li><a href="#">Projects</a></li>
+            <li class="contactme"><a href="#">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- blog content -->
+      <div class="blog-home">
+        <div class="row">
+          
+          <!-- blog entry -->
+          <div class="nine columns blog">
+            <div class="blog-entry"> 
+              <h6 class="publish-date">2 April 2016</h6>
+              <h4>Design to Web</h4>
+              <h5>Responsive Websites</h5>
+                <p>
+                  <a href="https://en.wikipedia.org/wiki/Responsive_web_design">Wikipedia</a> states that responsive web design  is an approach aimed at crafting sites to provide an optimal viewing and interaction experience across a wide range of devices (from desktop computer monitors to mobile phones). Basically put, a website that works on any size screen. 
+                </p>
+                <p>
+                  Responsive websites are important given the range of mobile devices these days and people opting to use them for browsing the web.
+                </p>
+
+              <h5>Mobile First Design</h5>
+                <p>
+                  Mobile first design is where you initially design the site to fit a mobile device such as a smart phone.  Then &#64;media queries are added so that we can adjust content of a page based on the screen size.
+                </p>
+
+                <p>
+                  Through practice it's easy to see why we do mobile first design as it gets more complicated to manipulate a page from a desktop design down to a mobile sized site.  It also helps you make important decisions about structuring your content.
+                </p>
+
+              <h5>What are Frameworks? Pros and Cons</h5>
+                <p>
+                  Frameworks in this context is a set structure of files and folders of standardised code that can be used as a foundation to start buildind a site.
+                </p>
+                <p>
+                  Frameworks save alot of time as we don't have to start from scratch.  It also takes care of cross-browser functionality so we don't have to worry about browser specific bugs.  It gives you clean code so that you can easily identify elements and layouts.  Most of off, frameworks are free to use.
+                </p>
+                <p>
+                  However there are some restrictions with frameworks.  You're restiction to that set of grids and code and it limits what you can design.  If you really need to customise something then you can change it but it requires extra effort and time.  During this process you will often discover that code that you don't need and it can take up alot of time.
+                </p>
+
+              <h5>Wireframes</h5>
+                <p>
+                  A wireframe illustrates the skeleton of a website.  It is also known as a screen blueprint that guides the development and design of a webpage.
+                </p>
+
+                <p>
+                  Below are the boxified wireframes I developed to start the redesign of my website.  As I started the redesign I found some aspects to be unncessary and/or didn't look right, and a feature or two I needed to better describe the content.  Overall, I accomplished the majority of what I wanted to achieve.
+                </p>
+                  <ul>
+                    <li>
+                      Banner -  The framework for the container didn't stretch across the full width of the browser so a banner didn't look nice.  I could have modified the <code>max-width</code> and <code>width</code> for the containter but I realised that too far down the track.  If I had of followed that boxified wireframe I would have been able to solve this problem earlier
+                    </li>
+                    <li>
+                      Mobile Navigation - I couldn't find could work with to implement this feature.  Bootstrap have numerous codes but I wanted to understand the basics before I ventured out to more complex features.  Instead I opted for vertical navigation when the screen size is reduced.
+                    </li>
+                    <li>
+                      <code>.row.column</code> - Through practice I now realise the true value of boxifying especially for the layout of the sire.  The grid makes it easier to understand and apply however I was stumped at times because there were options to use the 12 grid base or thirds, even halves.  I switched between them and am not sure how this affects the site.  Seems to be fine.
+                    </li>
+                  </ul>
+
+                  <div class="row wireframes">
+                    <img class="one-third column mobile-wireframe "src="../images/wireframe-index-page-mobile.png" alt="Wireframe for index page">
+                    <img class="two-thirds column desktop-wireframe "src="../images/wireframe-index-page-desktop.png" alt="Wireframe for index page">
+                  </div>
+                  <div class="row wireframes">
+                    <img class="one-third column mobile-wireframe "src="../images/wireframe-blog-page-mobile.png" alt="Wireframe for index page">
+                    <img class="two-thirds column destop-wireframe "src="../images/wireframe-blog-page-desktop.png" alt="Wireframe for index page">
+                  </div>
+            </div>
+          </div>
+          <!-- /blog entry -->
+
+          <!-- nav blog -->
+          <div class="three columns blog-nav">
+            <p class="blog-links">Blog links</p>
+            <nav class="nav-blog-links">
+              <ul>
+                <li class="active-blog">Design to Web</li>
+                <li>
+                  <a href="c2-emotional-intelligence.html">Emotional Intelligence</a>
+                </li>
+                <li><a href="t2-html-css-dos-p2.html">HTML CSS DOS Part 2</a></li>
+                <li><a href="t2-html-css-dos-p1.html">HTML CSS DOS Part 1</a></li>
+                <li><a href="c1-time-and-habbits-blog.html">Time and Habbits</a></li>
+                <li><a href="c1-reflection-blog.html">Reflection</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- nav blog -->
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="social">
+        <h6 class="connect">Let's connect</h6>
+        <div class="row social-icons">
+          <ul>
+            <li class="facebook">
+              <a href="htpps://www.facebook.com/renadeane"><img src="../images/icons/facebook.svg" alt="Facebook" width="30px" height="30px"></a>
+            </li>
+            <li class="instagram">
+              <a href="htpps://www.instagram.com/renadeane"><img src="../images/icons/instagram.svg" alt="Instagram" width="30px" height="30px"></a>
+            </li>
+            <li class="linkedin">
+              <a href="nz.linkedin.com/in/renadeane"><img src="../images/icons/linkedin.svg" alt="Linked In" width="30px" height="30px"></a>
+            </li>
+            <li class="twitter">
+              <a href="htpps://www.twitter.com/renaGoldsmith"><img src="../images/icons/twitter.svg" alt="Twitter" width="30px" height="30px"></a>
+            </li>
+            <li class="vimeo">
+              <a href="htpps://www.vimeo.com/user7362145"><img src="../images/icons/vimeo.svg" alt="Vimeo" width="30px" height="30px"></a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">Made by Rena-Deane &copy; 2016</p>    
+      </div>
+    </div>
+  </body>
+</html>

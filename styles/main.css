@@ -14,12 +14,18 @@ h4, h5 {
 }
 
 h5 {
-  font-size: 1.5em 
+  font-size: 1.5em; 
+  margin-top: .5em;
 }
 
 ul {
   margin: 0;
 }
+
+code {
+  font-size: .75em;
+}
+
 
 /*specific elements*/
 
@@ -72,6 +78,7 @@ ul {
   margin-bottom: 4em;
   text-align: center;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 
 .radius-image {
@@ -114,13 +121,18 @@ ul {
 
 .connect {
   color: #00b0b9;
+  text-transform: uppercase;
 }
 
 .active {
   color: #dddddd;
-  font-weight: bolder;
   text-decoration: underline;
 }
+
+.blog-nav{
+  border-top: thin solid #ebebeb;
+  padding-top: 1em;
+  }
 
 .nav-blog-links ul {
   display: block;
@@ -133,16 +145,43 @@ ul {
 }
 
 .nav-blog-links a {
-    text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .blog-links {
   display: none;
 }
 
+.blog-entry {
+    font-family: "Josefin Slab", serif;
+}
+
+.blog-entry p {
+  text-align: justify;
+  margin: 1em 0;
+  font-size: 1.25em;
+}
+
+.blog-entry ul {
+  text-align: justify;
+  margin-left: 2em;
+  font-size: 1.25em;
+}
+
+.blog-entry h5, h6 {
+  text-transform: none;
+}
+
 .publish-date {
   margin: 0;
-  color: #cccccc;
+  color: #777777;
+}
+
+.wireframes {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 2em;
 }
 
 @media screen and (min-width: 550px) {
@@ -152,6 +191,15 @@ ul {
 
   .nav-blog-links li {
     white-space: nowrap;
+  }
+
+  .nine.columns.blog {
+    padding-right: 2em;
+    border-right: thin solid #ebebeb;
+  }
+
+  .blog-nav {
+  border-top: 0;
   }
 }
 
@@ -182,9 +230,4 @@ ul {
     border-top: 0;
     padding-top: 0;
   }
-}
-
-
-@media screen and (min-width: 1000px) {
-
 }
