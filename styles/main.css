@@ -129,6 +129,10 @@ code {
   text-decoration: underline;
 }
 
+#first-choice {
+  padding-top: 0;
+}
+
 .blog-nav{
   border-top: thin solid #ebebeb;
   padding-top: 1em;
@@ -221,13 +225,7 @@ code {
     }
 
   .nav-blog-links li {
-      border-top: thin solid #eeeeee;
       padding-top: 2em;
       padding-bottom: 1em;
     }
-
-  li.active-blog {
-    border-top: 0;
-    padding-top: 0;
-  }
 }
