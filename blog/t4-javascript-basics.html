@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="UTF-8">
+    <title>Rena-Deane: Blog</title>
+
+      <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:200,400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:400,300' rel='stylesheet' type='text/css'>
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div class="row">
+        <div class="primary-nav twelve columns">
+          <ul class="site-nav">
+            <li><a href="https://rena-deane.github.io/">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="active">Blog Post</li>
+            <li><a href="#">Projects</a></li>
+            <li class="contactme"><a href="mailto:renadeane@gmail.com?subject=feedback" "email me">Email Me</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- blog content -->
+      <div class="blog-home">
+        <div class="row">
+          
+          <!-- blog entry -->
+          <div class="nine columns blog">
+            <div class="blog-entry"> 
+              <h6 class="publish-date">10 April 2016</h6>
+              <h4>JavaScript Basics</h4>
+              <h5>JavaScript compare to HTML and CSS</h5>
+                <p>
+                  All three components have different jobs to do.
+                </p>
+                <p>
+                  HTML structures content on a webpage using various elements.  CSS styles the page by telling the browser how to display each element.  It can vary for different media types and device sizes.  
+                </p>
+                <p>
+                  JavaScript (JS) extends the functionality of the website and allows for real time interactions.  We utilise JS for visual effects through to processing and calculating data.  One of my favourite functions through JS is the hamburger icon and it has become very common at collapsing the navigation menu.  Usually seen when the browser is reduced in size it can also be found on full width pages.  <a href="http://www.masitupungato.com/">Masi Typungato</a> is a great example of how it is utilised.
+                </p>
+                <p>
+                  JS, HTML and CSS are kept separate as it is easier to manage and to adjust code.
+                </p>
+
+              <h5>Control Flow and Loops</h5>
+                <p>
+                  Control flow is a sequence of code that is executed based on a set of conditions.  They use if / else statements to control the flow of code that is executed.  If I was making a carrot cake for work colleagues and one of them was allergic to walnuts I would have to leave them out.  The first part of the code asks whether someone is allergic to walnuts and if it’s true then I would use the recipe that excludes the walnuts.  But if no one was allergic then I would <code>bakeCake();</code> using walnuts.
+                </p>
+<pre>
+  <code>
+  if (allergicWalnuts === true) {
+    bakeCakeWithoutWalnuts();
+  }
+  else {
+    bakeCake(); 
+  }                
+  </code>
+</pre>
+                <p>
+                  After baking the cake we would have to clean every baking utensil, appliance, cutlery and crockery.  We can create a loop that repeats the process of stacking the dishwasher until the very last utensil is added OR the dishwasher is full.  A loop must have an exit otherwise we‘ll create an infinite loop.
+                </p>
+
+              <h5>Control Flow and Loops</h5>
+              <p>
+                An array is a special variable that can hold more than one value at a time.
+              </p>
+<pre>
+  <code>
+    var devCohort = [“Roa”, “Tieke”, “Kauri”, “Kakapo”];  
+  </code>
+</pre>
+              <p>
+                To access the values we refer to the index number.  Say we wanted to sign our cohort “Tieke” to our statement would be:
+              </p>
+<pre>
+  <code>
+    var name = devCohort[1];  
+  </code>
+</pre>
+              <p>
+                Objects are variables that can contain many values.  Values are written as name:value where name is considered a property.  In this example firstName, lastName, fluentMaori, and age are all properties.
+              </p>
+<pre>
+  <code>
+    var student = {
+      firstName: “Pokare”, 
+      lastName: ”Kareana”, 
+      fluentMaori: true, 
+      age: 44
+    }
+  </code>
+</pre>
+              <p>
+                To access the object literal we use <code>objectName.propertyName</code> or <code>objectName["propertyName"]</code>.
+              </p>
+<pre>
+  <code>
+  student.lastName // accesses Pokare  
+  </code>
+</pre>
+              <p>
+                So the difference is that to access a value from an array we use indexing and to access values from object literals we use dot notation or bracket notation.
+              </p>
+
+              <h5>Functions</h5>
+              <p>
+                A function  is a block of code designed to perform a particular task. The code is executed when something calls it.   The function syntax is outlined below:
+              </p>
+<pre>
+  <code>
+    function name(parameter1, parameter2) {
+      code to be executed
+    }
+  </code>
+</pre>
+              <p>
+                To call a function we say name(parameter1, parameter2) then the code within the curly brackets is executed.  The code can include formulas, conversions, strings etc…
+              </p>
+              <p>
+                It’s reusable code that can be called anytime in your programme or site by code external to your function.
+              </p>
+            </div>
+          </div>
+          <!-- /blog entry -->
+
+          <!-- nav blog -->
+          <div class="three columns blog-nav">
+            <p class="blog-links">Blog links</p>
+            <nav class="nav-blog-links">
+              <ul>
+                <li class="first-choice"><a href="blogs/c4-daily-mindfulness.html">Daily Mindfulness</a></li>
+                <li class="active">JavaScript Basics</li>
+                <li><a href="c3-meditation-process.html">Redesign and Meditation</a></li>
+                <li><a href="t3-design-to-web-blog.html">Design to Web</a></li>
+                <li>
+                  <a href="c2-emotional-intelligence.html">Emotional Intelligence</a>
+                </li>
+                <li><a href="t2-html-css-dos-p2.html">HTML CSS DOS Part 2</a></li>
+                <li><a href="t2-html-css-dos-p1.html">HTML CSS DOS Part 1</a></li>
+                <li><a href="c1-time-and-habbits-blog.html">Time and Habbits</a></li>
+                <li><a href="c1-reflection-blog.html">Reflection</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- nav blog -->
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="social">
+        <h6 class="connect">Let's connect</h6>
+        <div class="row social-icons">
+          <ul>
+            <li class="facebook">
+              <a href="htpps://www.facebook.com/renadeane"><img src="../images/icons/facebook.svg" alt="Facebook" width="30px" height="30px"></a>
+            </li>
+            <li class="instagram">
+              <a href="htpps://www.instagram.com/renadeane"><img src="../images/icons/instagram.svg" alt="Instagram" width="30px" height="30px"></a>
+            </li>
+            <li class="linkedin">
+              <a href="nz.linkedin.com/in/renadeane"><img src="../images/icons/linkedin.svg" alt="Linked In" width="30px" height="30px"></a>
+            </li>
+            <li class="twitter">
+              <a href="htpps://www.twitter.com/renaGoldsmith"><img src="../images/icons/twitter.svg" alt="Twitter" width="30px" height="30px"></a>
+            </li>
+            <li class="vimeo">
+              <a href="htpps://www.vimeo.com/user7362145"><img src="../images/icons/vimeo.svg" alt="Vimeo" width="30px" height="30px"></a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">Made by Rena-Deane &copy; 2016</p>    
+      </div>
+    </div>
+  </body>
+</html>
