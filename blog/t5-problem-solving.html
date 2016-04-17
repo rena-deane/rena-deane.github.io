@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="UTF-8">
+    <title>Rena-Deane: Blog</title>
+
+      <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:200,400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:400,300' rel='stylesheet' type='text/css'>
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div class="row">
+        <div class="primary-nav twelve columns">
+          <ul class="site-nav">
+            <li><a href="https://rena-deane.github.io/">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="active">Blog Post</li>
+            <li><a href="#">Projects</a></li>
+            <li class="contactme"><a href="mailto:renadeane@gmail.com?subject=feedback" "email me">Email Me</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- blog content -->
+      <div class="blog-home">
+        <div class="row">
+          
+          <!-- blog entry -->
+          <div class="nine columns blog">
+            <div class="blog-entry"> 
+              <h6 class="publish-date">18 April 2016</h6>
+              <h4>Problem Solving</h4>
+              <h5>What problem?</h5>
+              <p>
+                I wanted to add a listener to my element.  But the selector I was adding to my .js file wasn’t grabbing the correct element.
+              </p>
+
+              <h5>What problem solving techniques did I use?</h5>
+              <p>
+                I knew it wasn’t grabbing because I kept getting an error message saying it was undefined.
+              </p>
+              <ul>
+                <li>
+                  Googling error messages: My searches returned mostly jQuery solutions and/or the JavaScript solutions were too specific to a particular scenario it was hard to dissect and find the relevant code. 
+                </li>
+                <li>
+                  Try Something: I kept trying different things but my code was all over the place.  I needed a place to track the results of my code.
+                </li>
+                <li>
+                  Reading error messages and using the console to try new lines of code: This was the best solution for me - working in the console.  There was a lot of trial and error but I got the hang of selecting the correct elements and rarely received errors.  The console is really helpful and a problem solving technique I will use many times in the future. 
+                </li>
+              </ul>
+
+              <h5>How did I feel and what did I learn?</h5>
+              <p>
+                The process was extremely frustrating but extremely rewarding once I discovered the console and started getting the results I wanted.
+              </p>
+              <p>
+                Never give up because there is a technique that will help you get the answers you’re looking for.  For me it is a mix of googling, reading error messages, asking for help from peers, coaches or friend and in other instances the rubber duck method.
+              </p>
+
+              <h5>Problem solving techniques and process. Am I confident?</h5>
+              <ul>
+                <li>
+                  Pseudocode - If pseudocoding is explaining what I want my code to do, sequentially, then I’ve started using this technique.  Wouldn’t say I’m confident.
+                </li>
+                <li>
+                  Rubber ducky method - When I was stuck on one  particular problem I made a screen recording to send for my friend for advice.  When I rewatched the video of me explaining what I wanted to do and why I thought it might not work I actually identified some errors myself.  I think it’s a similar concept to the rubber ducky.
+                </li>
+                <li>
+                  Reading error messages - Almost confident.  Still discovering new errors and capabilities.
+                </li>
+                <li>
+                  Console.logging - one of my favourite techniques.
+                </li>
+                <li>
+                  Googling - relatively confident.  Error messages are helpful for googling.
+                </li>
+                <li>
+                  Asking your peers for help - If I know my peers are confident and have the capacity to provide assistance I will ask them directly.
+                </li>
+                <li>
+                  Asking coaches for help - My coach has helped me out a few times and if I’m blocked I do ask him for help. 
+                </li>
+                <li>
+                  Improving your process with reflection - At the end of this sprint I will reflect on how I could have done things better.  Especially with the way I manage my time.
+                </li>
+              </ul>
+
+              <h5>JS Array Functions</h5>
+              <code>.map()</code>
+              <p>Every value in the square brackets [] has a function applied to it, maybe a mathematic formula.  Then the results are put in to new square brackets []. These brackets are called arrays.</p>
+              <code>.filter()</code>
+              <p>
+                Same again.  Every value in the square brackets [] has a function applied to it.  Only this time the function has a test.  If a value in the [] passes the test then it gets filtered and added to a new [].
+              </p>
+              <code>.reduce()</code>
+              <p>
+                This method reduces all the values in the array [] to one value. This is achieved by executing a provided function for each value of the array (from left-to-right).  Rather then being added to an array the value is stored in an accumulator.
+              </p>
+            </div>
+          </div>
+          <!-- /blog entry -->
+
+          <!-- nav blog -->
+          <div class="three columns blog-nav">
+            <p class="blog-links">Blog links</p>
+            <nav class="nav-blog-links">
+              <ul>
+                <li class="active">Problem Solving</li>
+                <li><a href="c5-self-confidence.html">Self-Confidence</a></li>
+                <li><a href="c4-daily-mindfulness.html">Daily Mindfulness</a></li>
+                <li><a href="t4-javascript-basics.html">JavaScript Basics</a></li>
+                <li><a href="c3-meditation-process.html">Redesign and Meditation</a></li>
+                <li><a href="t3-design-to-web-blog.html">Design to Web</a></li>
+                <li>
+                  <a href="c2-emotional-intelligence.html">Emotional Intelligence</a>
+                </li>
+                <li><a href="t2-html-css-dos-p2.html">HTML CSS DOS Part 2</a></li>
+                <li><a href="t2-html-css-dos-p1.html">HTML CSS DOS Part 1</a></li>
+                <li><a href="c1-time-and-habbits-blog.html">Time and Habbits</a></li>
+                <li><a href="c1-reflection-blog.html">Reflection</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- nav blog -->
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="social">
+        <h6 class="connect">Let's connect</h6>
+        <div class="row social-icons">
+          <ul>
+            <li class="facebook">
+              <a href="htpps://www.facebook.com/renadeane"><img src="../images/icons/facebook.svg" alt="Facebook" width="30px" height="30px"></a>
+            </li>
+            <li class="instagram">
+              <a href="htpps://www.instagram.com/renadeane"><img src="../images/icons/instagram.svg" alt="Instagram" width="30px" height="30px"></a>
+            </li>
+            <li class="linkedin">
+              <a href="nz.linkedin.com/in/renadeane"><img src="../images/icons/linkedin.svg" alt="Linked In" width="30px" height="30px"></a>
+            </li>
+            <li class="twitter">
+              <a href="htpps://www.twitter.com/renaGoldsmith"><img src="../images/icons/twitter.svg" alt="Twitter" width="30px" height="30px"></a>
+            </li>
+            <li class="vimeo">
+              <a href="htpps://www.vimeo.com/user7362145"><img src="../images/icons/vimeo.svg" alt="Vimeo" width="30px" height="30px"></a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">Made by Rena-Deane &copy; 2016</p>    
+      </div>
+    </div>
+  </body>
+</html>
